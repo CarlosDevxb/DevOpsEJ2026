@@ -61,31 +61,3 @@ Un **Shell Script** es un archivo de texto que contiene una secuencia de comando
     sudo apt autoremove -y
     echo "¡Mantenimiento completado!"
     ```
-
-## 2.6 Práctica y Evaluación
-
-¡Es hora de validar lo aprendido! Responde las siguientes preguntas mentalmente o en un papel antes de consultar las soluciones.
-
-### 📝 Cuestionario
-
-1.  **Navegación:** Estás en una subcarpeta y quieres subir un nivel hacia atrás. ¿Qué comando usas?
-2.  **Comandos:** ¿Qué comando usarías para buscar una palabra específica dentro de un archivo de texto?
-3.  **Permisos:** Si quieres que un script sea ejecutable por todos, ¿qué comando `chmod` usarías (modo simbólico)?
-4.  **Gestión de Paquetes:** ¿Cuál es la diferencia fundamental entre `apt update` y `apt upgrade`?
-5.  **Scripting:** ¿Qué línea es obligatoria al inicio de cualquier script de Bash para que el sistema sepa cómo ejecutarlo?
-
----
-
-### 💡 Soluciones
-
-<details>
-<summary><strong>Haz clic aquí para desplegar las respuestas correctas</strong></summary>
-
-1.  `cd ..`
-2.  `grep "palabra" archivo`
-3.  `chmod +x script.sh`
-4.  `update` actualiza la **lista** de paquetes disponibles (el catálogo/índice). `upgrade` descarga e instala las **actualizaciones** reales de los programas.
-5.  El Shebang: `#!/bin/bash`
-
-</details>
-  
