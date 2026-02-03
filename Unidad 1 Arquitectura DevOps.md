@@ -85,6 +85,32 @@ Para trabajar profesionalmente, transformamos VS Code en un entorno potente usan
 4.  **GitLens:** Superpoderes para Git (ver quién editó cada línea de código y cuándo).
 5.  **Thunder Client / Postman:** Para probar APIs directamente desde VS Code sin salir de la ventana.
 
+### 1.4.4 Arquitectura en la nube
+Desarrollar una arquitectura en la nube no es solo "subir servidores". Implica diseñar sistemas que aprovechen la elasticidad y los servicios gestionados de proveedores como AWS, Azure o Google Cloud.
+
+*   **El Proceso de Diseño:**
+    1.  **Evaluación de Requisitos:** ¿Necesitamos alta disponibilidad? ¿Baja latencia? ¿Cumplimiento legal?
+    2.  **Selección de Servicios:** Elegir entre IaaS (Máquinas virtuales), PaaS (App Services) o Serverless (Functions) según el control y mantenimiento deseado.
+    3.  **Diseño de Red:** Definir VPCs, subredes y reglas de seguridad (Firewalls) para aislar recursos.
+    4.  **Estrategia de Datos:** Decidir entre bases de datos relacionales (SQL) o NoSQL, y cómo se gestionarán los backups.
+
+#### Modelos de Servicio (IaaS vs PaaS vs SaaS)
+Para elegir la arquitectura correcta, es fundamental entender los modelos de servicio y la responsabilidad compartida:
+
+| Característica | IaaS (Infraestructura) | PaaS (Plataforma) | SaaS (Software) |
+| :--- | :--- | :--- | :--- |
+| **Analogía** | Alquilar un terreno (construyes todo). | Alquilar una habitación de hotel (listo para usar). | Pedir pizza a domicilio (solo consumes). |
+| **Control** | Máximo (Tú controlas el SO). | Medio (Tú controlas el código). | Mínimo (Tú solo configuras). |
+| **Responsabilidad** | Tú gestionas actualizaciones, seguridad del SO y runtimes. | El proveedor gestiona el SO. Tú solo despliegas la App. | El proveedor gestiona todo. |
+| **Ejemplos** | AWS EC2, Azure VM, Google Compute Engine. | Heroku, Vercel, AWS Elastic Beanstalk. | Gmail, Salesforce, Dropbox, Zoom. |
+
+*   **Pilares de una Buena Arquitectura (Well-Architected):**
+    *   **Excelencia Operativa:** Automatizar cambios y responder a eventos.
+    *   **Seguridad:** Proteger datos y sistemas (Principio de menor privilegio).
+    *   **Fiabilidad:** El sistema se recupera de fallos automáticamente.
+    *   **Eficiencia de Rendimiento:** Usar los recursos de computación de forma eficiente.
+    *   **Optimización de Costos:** Pagar solo por lo que se usa.
+
 ## 1.5 Proyecto Integrador
 El objetivo final es construir una aplicación **Full Stack** que integre todos los conceptos:
 *   **Frontend:** React/Angular consumiendo datos.
