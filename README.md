@@ -44,12 +44,3 @@ Las aplicaciones modernas no son monolitos aislados; son sistemas conectados.
     * **Backend (API):** Procesa datos, habla con la base de datos y entrega respuestas en formato JSON.
     * **Frontend (Cliente):** Consume esa API para mostrar la información bonita al usuario.
 * **Ejemplo:** Cuando usas Uber, la app consume la API de Google Maps para mostrarte el mapa, y la API de pagos para cobrarte.
-
-## 5. Próximos Pasos: Ruta de Aprendizaje (Roadmap)
-Para convertirse en un Full-Stack Developer con capacidades de DevOps, seguiremos este camino:
-
-1.  **Git & GitHub:** Control de versiones profesional y trabajo colaborativo.
-2.  **Bases de Datos:** Persistencia de datos real (MySQL/PostgreSQL).
-3.  **Desarrollo de API:** Crear lógica de negocio robusta.
-4.  **Frontend Moderno:** Crear interfaces que consuman nuestra API.
-5.  **DevOps & Cloud:** Dockerización y despliegue en servidores Linux/AWS.
