@@ -30,7 +30,6 @@ Un repositorio remoto en GitHub sirve como copia de seguridad y punto central de
 Las ramas son líneas de tiempo paralelas. Permiten trabajar en nuevas funciones o arreglos sin afectar el código principal que funciona (producción).
 *   **Rama `main` (o `master`):** Contiene el código estable y listo para producción.
 *   **Comando:** `git checkout -b nombre-rama` (Crea y cambia a una nueva rama).
-
 ### 3.3.2 Forks
 Un **Fork** es una copia de un repositorio ajeno en tu propia cuenta de GitHub.
 *   **Uso:** Es fundamental en el código abierto (Open Source). Copias el proyecto, lo modificas en tu cuenta y luego propones los cambios al dueño original.
@@ -57,5 +56,7 @@ En entornos profesionales, la rama `main` es sagrada. GitHub permite configurar 
     1.  **Require pull request reviews:** Nadie puede hacer `push` directo a `main`. Todo cambio debe venir de un PR y ser aprobado por al menos otro desarrollador.
     2.  **Require status checks to pass:** Bloquea la fusión si las pruebas automáticas (CI/CD) fallan.
     3.  **Include administrators:** Las reglas aplican incluso a los jefes o dueños del repo.
+
+
 
 > **Nota DevOps:** La protección de ramas es el primer paso para implementar **Integración Continua (CI)**, asegurando que el código "roto" nunca llegue a producción.

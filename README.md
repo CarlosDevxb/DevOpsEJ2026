@@ -1,46 +1,46 @@
-# De Estudiante a Ingeniero: Introducción al Desarrollo de Software Profesional
+# Temario Habilidades DevOps 2026
+## Unidad 1: Arquitectura DevOps
+*   **1.1** Fundamentos de frameworks
+*   **1.2** Frameworks y lenguajes de programación
+*   **1.3** Javascript y Typescript
+    *   1.3.1 React
+    *   1.3.2 Angular
+    *   1.3.3 APIs
+*   **1.4** Habilidades DevOps
+    *   1.4.1 IDEs
+    *   1.4.2 Visual Studio Code
+    *   1.4.3 Extensiones de VS code
+*   **1.5** Proyecto integrador
 
-## 1. Introducción: El "Valle de la Muerte" en la Programación
-Muchos estudiantes dominan la lógica básica (bucles, condicionales, algoritmos), pero se sienten perdidos al intentar construir una aplicación real. Este documento describe la transición necesaria para pasar de escribir scripts académicos a desarrollar software profesional, escalable y mantenible.
+## Unidad 2: Linux
+*   **2.1** Comandos Básicos de terminal
+*   **2.2** Instalación de paquetes
+*   **2.3** Usuarios, permisos y redes en Linux
+*   **2.4** Secure Shell
+*   **2.5** Scripting y automatización
 
-## 2. Programación Básica vs. Desarrollo de Software Profesional
+## Unidad 3: Git y GitHub
+*   **3.1** Fundamentos de Git
+*   **3.2** Comandos de Git
+*   **3.3** Repositorios en Github
+    *   3.3.1 Ramas
+    *   3.3.2 Forks
+    *   3.3.3 Commits
+    *   3.3.4 Push
+    *   3.3.5 Pull Request
+*   **3.5** Protección de Ramas
 
-### Programación Básica (El enfoque académico)
-* **Objetivo:** Resolver un problema lógico aislado (ej. Serie de Fibonacci, Ordenamiento de burbuja).
-* **Entorno:** Se ejecuta en la consola local del estudiante.
-* **Duración:** El código corre unos segundos y termina.
-* **Mantenimiento:** Nulo. Una vez entregada la tarea, el código se olvida.
+## Unidad 4: Docker
+*   **4.1** Historia y función de docker
+*   **4.2** Contenedores
+*   **4.3** Imágenes
+*   **4.4** Volúmenes
+*   **4.5** Compose
 
-### Desarrollo de Software Profesional (El enfoque de ingeniería)
-* **Objetivo:** Resolver una necesidad de negocio continua.
-* **Entorno:** Servidores en la nube (AWS, Azure), contenedores (Docker), múltiples entornos (Desarrollo, Pruebas, Producción).
-* **Duración:** El software debe funcionar 24/7/365.
-* **Pilares:**
-    * **Escalabilidad:** ¿Qué pasa si entran 10,000 usuarios a la vez?
-    * **Mantenibilidad:** El código debe ser limpio para que otros puedan trabajarlo.
-    * **Colaboración:** Uso estricto de control de versiones (Git).
-
-> **Analogía:** Saber programar algoritmos es como saber cortar cebolla en casa. Desarrollar software es gestionar la cocina de un restaurante industrial.
-
-## 3. Lenguajes vs. Frameworks
-
-### El Lenguaje de Programación (La materia prima)
-Es la herramienta base (JavaScript, Java, Python). Te permite hacer cualquier cosa, pero te obliga a construir todo desde cero.
-* *Desventaja:* Tienes que manejar manualmente la seguridad, las conexiones de red y la estructura de archivos. Es propenso a errores humanos.
-
-### El Framework (La fábrica)
-Es un conjunto de herramientas, librerías y **reglas** construidas sobre un lenguaje.
-* **Ejemplos:** Angular, React (Frontend); Spring Boot, Express, Django (Backend).
-* **¿Para qué sirven?**
-    1.  **Estandarización:** Define dónde va cada archivo. Facilita que un equipo trabaje junto.
-    2.  **Seguridad:** Traen protección por defecto contra ataques comunes.
-    3.  **Velocidad:** Evitan "reinventar la rueda" (sistemas de login, conexión a BD ya hechos).
-
-## 4. Las APIs (Interfaz de Programación de Aplicaciones)
-Las aplicaciones modernas no son monolitos aislados; son sistemas conectados.
-
-* **Definición:** Una API es un contrato que permite que dos sistemas hablen entre sí.
-* **Arquitectura Moderna:**
-    * **Backend (API):** Procesa datos, habla con la base de datos y entrega respuestas en formato JSON.
-    * **Frontend (Cliente):** Consume esa API para mostrar la información bonita al usuario.
-* **Ejemplo:** Cuando usas Uber, la app consume la API de Google Maps para mostrarte el mapa, y la API de pagos para cobrarte.
+## Unidad 5: Cloud Computing (AWS)
+*   **5.1** Amazon Web Service
+*   **5.2** EC2
+*   **5.3** Aurora RDS
+*   **5.4** ECS
+*   **5.5** ECR
+*   **5.6** Despliegue en AWS
