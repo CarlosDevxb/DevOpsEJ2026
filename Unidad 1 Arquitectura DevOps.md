@@ -117,3 +117,5 @@ El objetivo final es construir una aplicación **Full Stack** que integre todos 
 *   **Backend:** API REST Node.js/Express sirviendo datos.
 *   **Base de Datos:** Persistencia real.
 *   **DevOps:** Todo el código versionado en GitHub y listo para desplegarse.
+
+## 1.6 Estructura De Un Proyecto Integrado En la Nube
