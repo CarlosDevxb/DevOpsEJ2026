@@ -124,30 +124,34 @@ Una estructura de carpetas bien organizada es vital para la escalabilidad y el m
 
 ```text
 mi-proyecto-fullstack/
-├── backend/                # Lógica de servidor (Ej: Java Spring Boot / Node.js)
+├── backend/                # Lógica de servidor (Node.js / Express)
 │   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/com/cuchiops/app/
-│   │   │   │   ├── config/         # Configuraciones (Seguridad, CORS, DB)
-│   │   │   │   ├── controllers/    # Endpoints de la API (REST)
-│   │   │   │   ├── models/         # Entidades de base de datos (JPA/Hibernate)
-│   │   │   │   ├── repositories/   # Interfaces para acceso a datos (MySQL/PostgreSQL)
-│   │   │   │   ├── services/       # Lógica de negocio
-│   │   │   │   └── dto/            # Data Transfer Objects
-│   │   │   └── resources/
-│   │   │       └── application.properties # Configuración de entorno
+│   │   ├── config/         # Configuración (DB, Variables de entorno)
+│   │   ├── controllers/    # Controladores (Manejo de peticiones HTTP)
+│   │   ├── middlewares/    # Middlewares (Autenticación, Logs, Errores)
+│   │   ├── models/         # Modelos de datos (Schemas)
+│   │   ├── routes/         # Rutas de la API (Definición de endpoints)
+│   │   ├── services/       # Lógica de negocio
+│   │   ├── utils/          # Utilidades compartidas
+│   │   └── app.js          # Punto de entrada de la aplicación
+│   ├── .env                # Variables de entorno
 │   ├── tests/              # Pruebas unitarias y de integración
 │   └── Dockerfile          # Configuración de contenedor para el backend
 │
-├── frontend/               # Interfaz de usuario (Ej: Angular / React)
+├── frontend/               # Interfaz de usuario (React + Tailwind CSS)
+│   ├── public/             # Archivos estáticos
 │   ├── src/
-│   │   ├── app/ (o components/)
-│   │   │   ├── core/           # Servicios globales, interceptores, guards
-│   │   │   ├── shared/         # Componentes, pipes y directivas reutilizables
-│   │   │   ├── features/       # Módulos específicos de la funcionalidad
-│   │   │   └── assets/         # Imágenes, fuentes y estilos globales
-│   │   ├── environments/       # Variables de entorno (Dev/Prod)
-│   │   └── styles.css          # Estilos globales (SASS/CSS)
+│   │   ├── assets/         # Imágenes y recursos estáticos
+│   │   ├── components/     # Componentes reutilizables (UI Kit)
+│   │   ├── context/        # Estado global (Context API)
+│   │   ├── hooks/          # Custom Hooks
+│   │   ├── layouts/        # Plantillas (Header, Footer)
+│   │   ├── pages/          # Vistas principales (Rutas)
+│   │   ├── services/       # Conexión con Backend (Axios)
+│   │   ├── App.jsx         # Componente principal
+│   │   └── index.css       # Configuración Tailwind (@tailwind directives)
+│   ├── tailwind.config.js  # Configuración de Tailwind
+│   ├── postcss.config.js   # Configuración PostCSS
 │   ├── package.json
 │   └── Dockerfile          # Configuración de contenedor para el frontend
 │
