@@ -117,3 +117,38 @@ El objetivo final es construir una aplicación **Full Stack** que integre todos 
 *   **Backend:** API REST Node.js/Express sirviendo datos.
 *   **Base de Datos:** Persistencia real.
 *   **DevOps:** Todo el código versionado en GitHub y listo para desplegarse.
+## 1.6 Estrcutura de un proyecto de software en Cloud
+mi-proyecto-fullstack/
+├── backend/                # Lógica de servidor (Ej: Java Spring Boot / Node.js)
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/cuchiops/app/
+│   │   │   │   ├── config/         # Configuraciones (Seguridad, CORS, DB)
+│   │   │   │   ├── controllers/    # Endpoints de la API (REST)
+│   │   │   │   ├── models/         # Entidades de base de datos (JPA/Hibernate)
+│   │   │   │   ├── repositories/   # Interfaces para acceso a datos (MySQL/PostgreSQL)
+│   │   │   │   ├── services/       # Lógica de negocio
+│   │   │   │   └── dto/            # Data Transfer Objects
+│   │   │   └── resources/
+│   │   │       └── application.properties # Configuración de entorno
+│   ├── tests/              # Pruebas unitarias y de integración
+│   └── Dockerfile          # Configuración de contenedor para el backend
+│
+├── frontend/               # Interfaz de usuario (Ej: Angular / React)
+│   ├── src/
+│   │   ├── app/ (o components/)
+│   │   │   ├── core/           # Servicios globales, interceptores, guards
+│   │   │   ├── shared/         # Componentes, pipes y directivas reutilizables
+│   │   │   ├── features/       # Módulos específicos de la funcionalidad
+│   │   │   └── assets/         # Imágenes, fuentes y estilos globales
+│   │   ├── environments/       # Variables de entorno (Dev/Prod)
+│   │   └── styles.css          # Estilos globales (SASS/CSS)
+│   ├── package.json
+│   └── Dockerfile          # Configuración de contenedor para el frontend
+│
+├── database/               # Scripts de migración y configuración DB
+│   └── init.sql
+│
+├── .github/                # Workflows para GitHub Actions
+├── docker-compose.yml      # Orquestación local de servicios
+└── README.md               # Documentación del proyecto
