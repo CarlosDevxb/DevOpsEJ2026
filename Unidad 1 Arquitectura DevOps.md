@@ -117,6 +117,7 @@ El objetivo final es construir una aplicación **Full Stack** que integre todos 
 *   **Backend:** API REST Node.js/Express sirviendo datos.
 *   **Base de Datos:** Persistencia real.
 *   **DevOps:** Todo el código versionado en GitHub y listo para desplegarse.
+<<<<<<< HEAD
 ## 1.6 Estrcutura de un proyecto de software en Cloud
 mi-proyecto-fullstack/
 ├── backend/                # Lógica de servidor (Ej: Java Spring Boot / Node.js)
@@ -152,3 +153,7 @@ mi-proyecto-fullstack/
 ├── .github/                # Workflows para GitHub Actions
 ├── docker-compose.yml      # Orquestación local de servicios
 └── README.md               # Documentación del proyecto
+=======
+
+## 1.6 Estructura De Un Proyecto Integrado En la Nube
+>>>>>>> 1de64d5ed5083ea3fec1e04f3618b4d67384b603
